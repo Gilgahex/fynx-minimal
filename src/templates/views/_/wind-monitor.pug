@@ -1,15 +1,17 @@
 section(class="canvas wind-monitor" id="wind-monitor")
 
-    h2 Core Capabilities
+    h2 Local Wind Monitor
 
     div(class="content")
-
-        div
-           script(src="https://www.windfinder.com/widget/forecast/js/santa_barbara?unit_wave=m&unit_rain=in&unit_temperature=f&unit_wind=mph&days=3&show_day=0")
-           	a(rel="nofollow" href="https://www.windfinder.com/forecast/santa_barbara?utm_source=forecast&utm_medium=web&utm_campaign=homepageweather&utm_content=noscript-forecast")
-                    Wind forecast for Santa Barbara
-                    provided by
-            a(rel="nofollow" href="https://www.windfinder.com?utm_source=forecast&utm_medium=web&utm_campaign=homepageweather&utm_content=noscript-logo">windfinder.com)
-
+    script(
+            src=
+            "https://www.windfinder.com/widget/forecast/js/santa_barbara?
+            unit_wave=m
+            &unit_rain=in
+            &unit_temperature=f
+            &unit_wind=mph
+            &days=3
+            &show_day=0"
+            ).
 
     +nav-1({ target: "front", direction: "prev" })
