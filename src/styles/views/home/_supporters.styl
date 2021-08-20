@@ -1,0 +1,47 @@
+.team
+    .content
+        align-items: center
+        +max(1)
+            flex-direction: column
+        +max(2)
+            flex-wrap: wrap
+            justify-content: center
+        +min(2)
+            align-items: baseline
+            justify-content: space-between
+        div
+            display: flex
+            align-items: center
+            flex-direction: column
+            svg
+                height: rem(130px)
+                fill: _graphic
+                padding: 0
+                +max(2)
+                    width: rem(150px)
+                +min(2)
+                    width: 100%
+                    height: 100%
+                    padding: rem(20px)
+                +min(3)
+                    padding: rem(60px)
+            article
+                +max(1)
+                    margin-top: rem(20px)
+                    text-align: center
+                h2
+                    font-size: 2.0rem
+                    padding: 0
+                    margin: rem(20px) 0 rem(10px)
+                    text-align: left
+                p
+                    font-size: 1.0rem
+                    margin: 0
+                    line-height: 1.0
+                    +min(1)
+                        overflow: hidden
+                        text-align: left
+                    +min(2)
+                        font-size: 1rem
+                    +min(3)
+                        font-size: 1.1rem
