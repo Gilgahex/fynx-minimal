@@ -17,7 +17,9 @@ head
         link(rel="icon" href="/assets/images/global/_linked/favicon.png")
 
     block scripts
-        script(defer src = `/js/freshpaint.js`)
+        script(defer src = `mixins/freshpaint.js`)
+        script(defer src = `https://unpkg.com/leaflet@1.4.0/dist/leaflet.js`)
+        script(defer src = `https://api.windy.com/assets/map-forecast/libBoot.js`)
         script(defer src=`//js-na1.hs-scripts.com/20582667.js`)
         script(defer src=`https://identity.netlify.com/v1/netlify-identity-widget.js`)
         script(defer src=`/assets/logic/root.js?v=${ TIME }`)

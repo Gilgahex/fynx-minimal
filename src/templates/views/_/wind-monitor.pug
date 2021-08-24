@@ -1,8 +1,6 @@
 section(class="canvas wind-monitor" id="wind-monitor")
 
     h2 Local Wind Monitor
-
-            div(class="content")
-                script(src="https://www.windfinder.com/widget/forecast/js/santa_barbara?unit_wave=m&unit_rain=in&unit_temperature=f&unit_wind=mph&days=3&show_day=0")
-
+        div(class="content", id="windy")
+            script(src="logic/windy.js")
     +nav-1({ target: "front", direction: "prev" })
